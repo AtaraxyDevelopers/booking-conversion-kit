@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Consultation request</title>
+    <style>
+      body {
+        font: 17px/1.5 system-ui;
+        max-width: 720px;
+        margin: 30px auto;
+        padding: 24px;
+        color: #17243b;
+      }
+      label {
+        display: block;
+        margin: 16px 0;
+      }
+      input,
+      textarea,
+      button {
+        font: inherit;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        background: #1759bf;
+        color: white;
+        border: 0;
+        border-radius: 6px;
+      }
+      output {
+        display: block;
+        background: #eef4ff;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      a {
+        color: #1759bf;
+      }
+    </style>
+    <script src="intake.js" defer></script>
+  </head>
+  <body>
+    <h1>Request a consultation</h1>
+    <p>
+      This prepares an email request. Your appointment is reserved only after
+      the business confirms it.
+    </p>
+    <form id="intake">
+      <label
+        >Business email (set before sharing)<input
+          name="business"
+          type="email"
+          value="sales@example.com"
+          required /></label
+      ><label>Your name<input name="name" required maxlength="200" /></label
+      ><label>Your email<input name="email" type="email" required /></label
+      ><label
+        >Budget<input
+          name="budget"
+          type="number"
+          min="0"
+          step="any"
+          required /></label
+      ><label
+        >Preferred appointment (UTC)<input
+          name="time"
+          type="datetime-local"
+          required /></label
+      ><label
+        >What do you need?<textarea
+          name="needs"
+          required
+          maxlength="2000"
+        ></textarea></label
+      ><button>Prepare request</button>
+    </form>
+    <p><a id="draft" hidden>Open email draft</a></p>
+    <p>
+      No information is sent until you send the email in your mail application.
+    </p>
+  </body>
+</html>

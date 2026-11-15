@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "project": "booking-conversion-kit",
+  "settings": {
+    "currency": "USD",
+    "minimumBudget": 1000
+  },
+  "records": [
+    {
+      "id": "booking-1",
+      "name": "Maple Studio",
+      "email": "buyer@example.com",
+      "owner": "Amina",
+      "start": "2026-11-16T10:00",
+      "duration": 30,
+      "status": "confirmed",
+      "budget": 3000,
+      "requirements": "Discuss a customer portal"
+    },
+    {
+      "id": "booking-2",
+      "name": "River Foods",
+      "email": "team@example.com",
+      "owner": "Amina",
+      "start": "2026-11-16T11:00",
+      "duration": 30,
+      "status": "requested",
+      "budget": 500,
+      "requirements": "Discuss an inventory dashboard"
+    }
+  ]
+}
