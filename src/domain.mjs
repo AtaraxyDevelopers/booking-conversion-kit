@@ -5,7 +5,7 @@ export const config = {
   description:
     "Qualify consultation requests and manage conflict-free appointment slots.",
   scope:
-    "A local booking desk with a downloadable intake form. Requests are emailed to your team; appointments are confirmed manually. No external calendar synchronization.",
+    "A local booking desk with a downloadable intake form. Visitors prepare an email request; your team confirms appointments manually. No external calendar synchronization.",
   method:
     "Confirmed bookings for the same owner must not overlap. Times are UTC. Requested slots do not reserve capacity. Adjacent appointments are allowed.",
   port: 4416,
