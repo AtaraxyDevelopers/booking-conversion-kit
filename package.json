@@ -1,6 +1,6 @@
 {
   "name": "@ataraxydevelopers/booking-conversion-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "description": "Qualify consultation requests and manage conflict-free appointment slots.",
